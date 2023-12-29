@@ -1,10 +1,17 @@
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Layout from "./Components/Layout/Layout"
+
 function App() {
 
   return (
     <>
-      <div className="start">
-        Strart
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
