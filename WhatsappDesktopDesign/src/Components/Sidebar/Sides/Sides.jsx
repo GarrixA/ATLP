@@ -2,20 +2,23 @@ import { BsChatRightTextFill } from "react-icons/bs";
 import { MdGroups2 } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
 import { RiQuestionLine } from "react-icons/ri";
+import prof from '../../../Images/prof.png'
+import { IoSearchSharp } from "react-icons/io5";
+import { CgSortAz } from "react-icons/cg";
 
 const Sides = () => {
   return (
-    <div className="sides flex flex-row">
-      <div className="lefSide flex flex-col flex-1">
-        <div className="first space-y-6 flex flex-col items-center bg-red-500">
-          <div className="chats ">
-            <div className="icon relative flex flex-col  p-2 bg-slate-400">
-              <BsChatRightTextFill className="text-[1.7rem]"/>
-              <div className="notif bg-red-700 text-white absolute w-5 h-5 text-sm items-center justify-center flex rounded-full p-2 top-0 right-0">6</div>
+    <div className="sides flex flex-row h-[92vh]">
+      <div className="lefSide flex flex-col flex-1 justify-between my-5">
+        <div className="first space-y-6 flex flex-col mx-0 p-2">
+          <div className="chats space-y-1">
+            <div className="icon relative flex flex-col items-center rounded-l-full rounded-r-full p-2 bg-slate-400">
+              <BsChatRightTextFill className="text-[1.5rem] text-slate-700"/>
+              <div className="notif bg-red-700 text-white absolute w-5 h-5 text-[.7rem] items-center justify-center flex rounded-full p-2 top-0 right-5">6</div>
             </div>
-            <h1>Chats</h1>
+            <h1 className="text-center font-bold">Chats</h1>
           </div>
-          <div className="updates">
+          <div className="updates flex flex-col items-center space-y-1">
             <div className="svg">
             <svg
               width="24"
@@ -39,17 +42,18 @@ const Sides = () => {
             </div>
             <h1>Updates</h1>
           </div>
-          <div className="commun">
+          <div className="commun flex flex-col items-center space-y-1">
             <div className="icon">
               <MdGroups2 />
             </div>
-            <h1>commu.</h1>
+            <h1>commun...</h1>
           </div>
-          <div className="calls">
+          <div className="calls flex flex-col items-center space-y-1">
             <MdPhone />
+            <h1>Calls</h1>
           </div>
-          <h1>Calls</h1>
-          <div className="channels">
+
+          <div className="channels flex flex-col items-center space-y-1">
             <svg
                 width="24"
                 height="24"
@@ -71,17 +75,26 @@ const Sides = () => {
                 />
                 <circle cx="11.9317" cy="11.9317" r="1.84448" fill="#54656F" />
               </svg>
+              <h1>Channels</h1>
           </div>
-          <h1>Channels</h1>
+          
         </div>
-        <div className="last">
-          <div className="quest">
+        <div className="last flex flex-col items-center space-y-2">
+          <div className="quest text-slate-700 text-[2rem]">
             <RiQuestionLine />
           </div>
-          <div className="prof"></div>
+          <div className="prof w-3/4 rounded-full overflow-hidden">
+            <img src={prof} alt="" className=" object-cover"/>
+          </div>
         </div>
       </div>
-      <div className="rightSide flex flex-col flex-[4]"> right</div>
+      <div className="rightSide flex flex-col flex-[4] mx-10">
+        <form className=" relative">
+        <IoSearchSharp className="absolute left-1 top-2 text-[1.5rem] text-slate-700"/>
+            <input type="text" placeholder="Search or start a new chat" className="w-full rounded-r-[0.8rem] rounded-l-[0.8rem] p-2 pl-8 text-[1.2rem] bg-slate-300"/>
+            <CgSortAz className="absolute right-0 top-1 text-[2.3rem]"/>
+        </form>
+      </div>
     </div>
   );
 };
