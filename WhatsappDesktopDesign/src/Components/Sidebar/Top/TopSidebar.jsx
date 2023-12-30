@@ -2,6 +2,7 @@ import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 import { RiEditBoxLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
+
 const TopSidebar = () => {
   return (
     <div className="topSidebar flex flex-row justify-between p-4 items-center">
@@ -10,7 +11,7 @@ const TopSidebar = () => {
         <RiCheckboxBlankCircleFill className="text-yellow-400" />
         <RiCheckboxBlankCircleFill className="text-green-600" />
       </div>
-      <div className="right flex flex-row justify-between text-[1.8rem] space-x-6 text-slate-500">
+      <div className="right flex flex-row justify-between text-[1.8rem] space-x-6 text-slate-500 mr-6">
         <RiEditBoxLine />
         <IoIosArrowDown />
       </div>

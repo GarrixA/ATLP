@@ -1,6 +1,5 @@
 import Contents from "../Contents/Contents";
 import Sidebar from "../Sidebar/Sidebar";
-import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
@@ -12,7 +11,6 @@ const Layout = () => {
         <Sidebar />
         <Contents/>
       </div>
-      <Outlet />
     </>
   );
 };

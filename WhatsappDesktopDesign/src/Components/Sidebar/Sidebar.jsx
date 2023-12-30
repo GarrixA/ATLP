@@ -3,7 +3,7 @@ import TopSidebar from "./Top/TopSidebar"
 
 const Sidebar = () => {
   return (
-    <div className='sidebar flex-1 bg-green-200 h-screen'>
+    <div className='sidebar flex-1 bg-white h-screen fixed w-[35%]'>
       <TopSidebar/>
       <Sides/>
     </div>
