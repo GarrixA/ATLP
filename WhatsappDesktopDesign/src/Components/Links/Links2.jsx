@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import profImage from "../../Images/Joe.png";
-import frame from '../../Images/frame.png'
+import frame from '../../Images/Frame.png'
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 import { FaVideo } from "react-icons/fa";
 import { MdLocalPhone } from "react-icons/md";
