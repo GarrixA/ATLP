@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input:focus ~ label,
+input:valid ~ label
+{
+    top: 5px;
+}
+
+
+#userNameInput:focus ~ label{
+    transform: translateY(-30px);
+    transition: all .5s ease-out;
+  }
+#passwordInput:focus ~ label{
+    transform: translateY(-30px);
+    transition: all .5s ease-out;
+  }
+
+  
+  
+  
+  

@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import '../index.css'
 
 const Login = () => {
   return (
@@ -32,12 +33,18 @@ const Login = () => {
           </div>
           <h6 className="mt-6 font-bold text-[0.7rem]">Trouble loging in?</h6>
           <h1 className=" m-5 text-[1.4rem] font-bold text-slate-400">OR</h1>
-          <div className="form w-[80%]">
-            <form className="flex flex-col ">
-              <label> user name</label>
-              <input type="text" placeholder="Username" />
-              <label> password</label>
-              <input type="text" placeholder="password" />
+          <div className="form w-[80%] mt-5">
+            <form className="flex flex-col space-y-14">
+              
+              <div className="formdiv py-4 relative border-b-3 border-b-2 border-black  outline-none  px-4 text-[1rem]">
+                <input id='userNameInput' type="text" className="absolute left-[-1rem] bottom-1 bg-transparent border-none outline-none px-4"/>
+                <label className="absolute left-[-.1rem] bottom-[5rem] pointer-events-none uppercase font-bold text-slate-300">Username Or email</label>
+              </div>
+              <div className="formdiv py-4 relative border-b-3 border-b-2 border-black  outline-none  px-4 text-[1rem]">
+                <input id='passwordInput' type="password" className="absolute left-[-1rem] bottom-1 bg-transparent border-none outline-none px-4"/>
+                <label className="absolute left-[-.1rem] bottom-[5rem]  pointer-events-none uppercase font-bold text-slate-300">password</label>
+              </div>
+              
               <p className=" text-[#0D46D9] font-semibold text-right ">
                 forgot password?
               </p>
