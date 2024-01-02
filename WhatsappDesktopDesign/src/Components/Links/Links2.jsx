@@ -94,14 +94,14 @@ const Links2 = () => {
           </div>
         </div>
         <div className="wrap flex mt-5">
-          <div className="message bg-[#fff] relative p-4 rounded-lg ml-10 ">
+          <div className="message bg-[#fff] relative p-4 rounded-lg ml-10 shadow ">
             <img src={frame} alt="" className=" backdrop-blur"/>
-            <span className="messages absolute left-[-.5rem] top-0"></span>
+            <span className="messages absolute left-[-.5rem] top-0 "></span>
           </div>
         </div>
 
         <div className="wrap  flex">
-          <div className="message bg-[#d9fdd3] relative p-4 rounded-lg mt-10 left-[60%]">
+          <div className="message bg-[#d9fdd3] relative p-4 rounded-lg mt-10 left-[60%] shadow">
             <h1>Morning to you klsnkaslnflkdsnflksdnflksdnlfndlsn <br />lkasdl'asmladsm;dfasLm <br /> na\'d.f\sd'.f\s'd.</h1>
             <span className="reply absolute right-[-.5rem] top-0"></span>
             <p className="absolute right-8 bottom-[.15rem] text-[.8rem] italic">17:30</p>
@@ -121,8 +121,8 @@ const Links2 = () => {
         </div>
 
         <div className="wrap  flex">
-          <div className="message bg-[#d9fdd3] relative p-4 rounded-lg mt-10 left-[60%]">
-            <h1>Morning to you klsnkaslnflkdsnflksdnflksdnlfndlsn <br />lkasdl'asmladsm;dfasLm <br /> na\'d.f\sd'.f\s'd.</h1>
+          <div className="message bg-[#d9fdd3] relative p-4 rounded-lg mt-10 left-[60%] shadow">
+            <h1>Morning to you klsnkaslnflkdsnflksdnflksdnlfndlsn <br />lkasdl'asmladsm;dfasLm</h1>
             <span className="reply absolute right-[-.5rem] top-0"></span>
             <p className="absolute right-8 bottom-[.15rem] text-[.8rem] italic">17:30</p>
             <span className="absolute right-2 bottom-[0.45rem]">
