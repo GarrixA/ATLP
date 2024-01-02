@@ -55,7 +55,7 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="signup flex items-center justify-center mt-14">
+        <div className="signup flex items-center justify-center mt-14 mb-14">
           <span>
             <b> Signup</b> if you don't have an account
           </span>
