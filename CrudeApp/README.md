@@ -1,5 +1,5 @@
-# This a level up assignment from Andela Technical Leadership Program (ATLP)
-## I made this end points of crude applications calling the posts
+# This is a level up assignment from Andela Technical Leadership Program (ATLP) 
+## I made this end points of crude applications of the posts
 
         I have made Model called postModel that contains :
                     >> Name
